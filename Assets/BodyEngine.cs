@@ -194,6 +194,7 @@ public class BodyEngine : MonoBehaviour
             cur_p_new = (boundary3[norInsec] + boundary3[notNorInsec]) / 2;
             r = 0.5f * Vector3.Distance(boundary3[norInsec], boundary3[notNorInsec]);
             iter++;
+            if (GUI.changed) EditorUtility.SetDirty(target);
             SceneView.RepaintAll();
             UnityEditorInternal.InternalEditorUtility.RepaintAllViews();
         }
