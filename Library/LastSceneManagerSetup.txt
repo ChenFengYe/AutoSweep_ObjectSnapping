@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scene/ObjectSnapping.unity
-  isLoaded: 1
-  isActive: 1
